@@ -18,9 +18,12 @@ digits: optional. The number of decimal places to keep
 round(103.2221,2) -> 103.22
 """
 
-openBalance = 1000
+balance = 1000
 deposits = [200,200,200,200,200,200,200,200,200,200,200,200]            # final: 3328.8
 #deposits = [500,1000,300,-250,500,185,-500,205,1200,-550,125,200]      # final: 3887.71
 #deposits = [1000,542,221.52,983,29.75,-10,982.23,10988,287,198,32,100]  # final: 16702.93
 
-    
+for deposite in deposits:
+    balance += deposits
+    balance += balance*0.005 #adding 0.5%interst to the opening balance
+final_balance=round(balance,2)

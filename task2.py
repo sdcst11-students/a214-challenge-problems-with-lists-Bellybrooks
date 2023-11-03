@@ -20,4 +20,10 @@ total = 0
 gst = 0
 pst = 0
 
-    
+for price in total:
+    gst=round(price*0.05,2)#calculate 5% gst
+    pst=round(price*0.07,2)#calculate 7% pst
+total=+price
+gst=+gst
+pst=+pst
+total_price=round(total + gst + pst,2)
